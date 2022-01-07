@@ -19,5 +19,12 @@ class TestMebeZPalindrome < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
+  def test_integer_not_palindrome?
+    refute 1325.palindrome?
+  end
+  
+  def test_integer_palindrome
+    assert 131.palindrome?
+  end
 end
 
